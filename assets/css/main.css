@@ -1,0 +1,202 @@
+@import url("./animaciones.css");
+@import url("./variables.css");
+
+
+/* Estilos para la navbar */
+.navbar.navbar-light {
+    background-image: url("../img/fondo-con-negro.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar .navbar-brand, 
+.navbar .nav-link {
+    color: var(--neutral-light-color);
+    margin-bottom: 20px;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color-3); 
+}
+
+.navbar-toggler {
+    border-color: var(--neutral-light-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Asegurarse que el navbar sea responsive */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center; /* Centra los elementos del menú en pantallas pequeñas */
+    }
+
+    .navbar-brand img {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Añade espacio entre los elementos del menú en pantallas muy pequeñas */
+    }
+}
+
+body {
+    background-color: var(--neutral-light-color); 
+    color: var(--primary-color); 
+}
+
+
+h1 {
+    color: var(--secondary-color-3);
+    text-align: center;
+}
+
+a {
+    color: var(--secondary-color-3);
+}
+
+a:hover {
+    color: var(--secondary-color-1);
+}
+
+
+
+
+/* Estilos para foto perfil */
+.foto-circular {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+}
+
+
+
+/* Estilos para la sección fortalezas */
+#fortalezas {
+    background-color: #ffffff !important; 
+    margin-bottom: 20px; 
+    padding: 40px; 
+}
+
+#fortalezas h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#fortalezas i {
+    color: #FFBFB7; /* Color de los íconos */
+}
+
+#fortalezas h4 {
+    margin-top: 15px;
+}
+
+/* Estilos para la sección Contacto */
+#contact {
+    background-color: var(--neutral-light-color); 
+    padding: 40px; 
+    margin-bottom: 20px; 
+}
+
+#contact .bg-dark {
+    background-color: var(--primary-color) !important; 
+    color: var(--neutral-light-color); 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+
+#contact h2 {
+    margin-bottom: 20px; 
+}
+
+#contact p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#contact .form-label {
+    font-weight: bold; 
+}
+
+#contact .form-control {
+    border-radius: 4px; 
+    margin-bottom: 15px; 
+}
+
+#contact .btn-primary {
+    background-color: var(--secondary-color-3); 
+    border-color: var(--secondary-color-3); 
+}
+
+#contact .btn-primary:hover {
+    background-color: var(--secondary-color-1); 
+    border-color: var(--secondary-color-1); 
+}
+
+.contact-section {
+    background-color: var(--secondary-color-2); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: var(--neutral-light-color); /* Color del texto para contrastar con la imagen */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+/* Estilos para el footer */
+#footer {
+    background-image: url("../img/fondo-con-negro.jpeg");
+    background-size: cover;
+    background-position: center; 
+    color: var(--neutral-light-color); 
+    padding: 40px 80px; 
+    
+}
+
+.footer-logo {
+    max-width: 250px; 
+    height: auto; 
+}
+
+#footer h5 {
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+#footer p {
+    margin-bottom: 5px; 
+}
+
+#footer a {
+    color: var(--neutral-light-color); /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+#footer a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre los iconos */
+    max-width: 250px; /* Ancho máximo para los iconos */
+    margin: 2 auto; /* Centrar los iconos */
+}
+
+.social-icon i {
+    font-size: 32px; /* Tamaño de los iconos */
+    transition: transform 0.3s; /* Transición para el efecto hover */
+}
+
+.social-icon i:hover {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+}
+
+
